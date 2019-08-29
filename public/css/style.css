@@ -1,0 +1,87 @@
+
+body {
+  background-color: #3a4a4d;
+  margin: 0;
+  font-family: "Arial", Times, sans-sarif; }
+  body #app {
+    position: absolute;
+    right: 50%;
+    padding: 0;
+    width: 30%;
+    transform: translate(50%, 10%); }
+    body #app header {
+      background-color: #62a8fa;
+      height: 100%;
+      width: 100%;
+      padding-top: 10%;
+      padding-bottom: 10%;
+      margin: 0; }
+      body #app header .logo {
+        text-align: center;
+        font-size: 10px; }
+        body #app header .logo a img {
+          display: block;
+          margin-left: auto;
+          margin-right: auto; }
+      body #app header h2 {
+        margin: 20px 10% 0 10%;
+        color: white;
+        text-align: center;
+        font-size: 100%; }
+      body #app header #addNew {
+        margin-top: 20px;
+        margin-bottom: 0;
+        padding-left: 7.5%;
+        width: 100%; }
+        body #app header #addNew input {
+          margin: 0;
+          padding: 0;
+          border-radius: 25px 0 0 25px;
+          height: 35px;
+          width: 75%;
+          border: none;
+          text-indent: 10px; }
+        body #app header #addNew button {
+          cursor: pointer;
+          margin: 0;
+          padding: 0;
+          border-radius: 0 25px 25px 0;
+          background-color: #f44336;
+          height: 35px;
+          width: 10%;
+          color: white;
+          border: none; }
+    body #app content ul {
+      position: absolute;
+      margin: 0;
+      padding: 0;
+      background-color: #d3f0ff;
+      width: 100%;
+      float: right; }
+      body #app content ul li {
+        cursor: pointer;
+        list-style-type: none;
+        border-bottom: 1px solid #84c9fc;
+        padding: 0;
+        display: grid;
+        grid-template-columns: 80% 20%; }
+        body #app content ul li p {
+          margin-left: 5%;
+          height: auto;
+          word-wrap: break-word;
+          float: right;
+          color: #646464; }
+        body #app content ul li button {
+          cursor: pointer;
+          background-color: transparent;
+          float: right;
+          margin: 0;
+          padding: 0;
+          border: none;
+          color: #f44336;
+          height: auto; }
+          body #app content ul li button img {
+            max-width: 30%;
+            min-width: 20%; }
+      body #app content ul li:hover {
+        background-color: #a0dfff; }
