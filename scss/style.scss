@@ -1,0 +1,113 @@
+$button-color: #f44336;
+$cursor-type: pointer;
+
+body {
+	background-color: #3a4a4d;
+	margin: 0;
+	font-family: "Arial", Times, sans-sarif;
+	#app {
+		position: absolute;
+		right: 50%;
+		padding: 0;
+		width: 30%;
+		transform: translate(50%, 10%);
+		header {
+			background-color: #62a8fa;
+			height: 100%;
+			width: 100%;
+			padding-top: 10%;
+			padding-bottom: 10%;
+			margin: 0;
+			.logo {
+				text-align: center;
+				font-size: 10px;
+				a {
+					img {
+						display: block;
+						margin-left: auto;
+						margin-right: auto;
+					}
+				}
+			}
+			h2 {
+				margin: 20px 10% 0 10%;
+				color: white;
+				text-align: center;
+				font-size: 100%;
+			}
+			#addNew {
+				margin-top: 20px;
+				margin-bottom: 0;
+				padding-left: 7.5%;
+				width: 100%;
+				input {
+					margin: 0;
+					padding: 0;
+					//padding-left: 10px;
+					border-radius: 25px 0 0 25px;
+					height: 35px;
+					width: 75%;
+					border: none;
+					text-indent: 10px;
+				}
+				button {
+					cursor: $cursor-type;
+					margin: 0;
+					padding: 0;
+					border-radius: 0 25px 25px 0;
+					background-color: $button-color;
+					height: 35px;
+					width: 10%;
+					color: white;
+					border: none;
+				}
+			}
+		}
+		content {
+			ul {
+				position: absolute;
+				margin: 0;
+				padding: 0;
+				background-color: #d3f0ff;
+				width: 100%;
+				float: right;
+				li {
+					cursor: $cursor-type;
+					list-style-type: none;
+					border-bottom: 1px solid #84c9fc;
+					padding: 0;
+					display: grid;
+					grid-template-columns: 80% 20%;
+
+					p {
+						margin-left: 5%;
+						height: auto;
+						word-wrap: break-word;
+						float: right;
+						color: #646464;
+					}
+					button {
+						cursor: $cursor-type;
+						background-color: transparent;
+						float: right;
+						margin: 0;
+						padding: 0;
+						border: none;
+						color: #f44336;
+						height: auto;
+						img {
+							// margin: 0;
+							//min-width: 30%;
+							max-width: 30%;
+							min-width: 20%;
+							//height:50%;
+						}
+					}
+				}
+				li:hover {
+					background-color: #a0dfff;
+				}
+			}
+		}
+	}
+}
